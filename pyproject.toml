@@ -1,0 +1,23 @@
+[project]
+name = "ddsp-svc"
+version = "0.1.0"
+description = "DDSP-SVC - Singing Voice Conversion"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "torchaudio>=2.0",
+    "gradio>=4",
+    "librosa",
+    "soundfile",
+    "pyyaml",
+    "pydantic>=2",
+    "praat-parselmouth",
+    "resampy",
+    "transformers",
+    "loguru",
+    "tqdm",
+    "einops",
+    "matplotlib",
+    "tensorboard",
+    "setuptools>=83.0.0",
+]
