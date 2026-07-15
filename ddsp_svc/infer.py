@@ -176,7 +176,7 @@ class InferencePipeline:
 
         empty_cache(self.device_info.type)
 
-        in_rms = np.sqrt(np.mean(audio ** 2) + 1e-8))
+        in_rms = np.sqrt(np.mean(audio ** 2) + 1e-8)
         out_rms = np.sqrt(np.mean(result ** 2) + 1e-8)
         if out_rms > 0 and in_rms / out_rms < 100:
             result = result * (in_rms / out_rms)
