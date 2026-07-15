@@ -178,7 +178,7 @@ class InferencePipeline:
 
         in_rms = np.sqrt(np.mean(audio ** 2) + 1e-8)
         out_rms = np.sqrt(np.mean(result ** 2) + 1e-8)
-        if out_rms > 0 and in_rms / out_rms < 100:
+        if out_rms > 0:
             result = result * (in_rms / out_rms)
         return result
 
